@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <a href="about_us.html">About us</a>
+    <a href="contact_us.html">Contact us</a>
+
+    <h1 style="color: lightcoral;">Contact Us</h1>
+    <hr/>
+    <h2>Locations</h2>
+    <table>
+        <tr>
+            <th>Locations</th>
+            <th>Opening hours</th>
+            <th>E-mail address</th>
+            <th>Phone number</th>
+        </tr>
+        <tr>
+            <td>Mandeville</td>
+            <td>9AM - 5PM</td>
+            <td>mandevillebranch@preservation.com</td>
+            <td>876123453672</td>
+        </tr>
+        <tr>
+            <td>Kingston</td>
+            <td>9AM - 5PM</td>
+            <td>kingstonbranch@preservation.com</td>
+            <td>876123453672</td>
+        </tr>
+        <tr>
+            <td>Montego Bay</td>
+            <td>9AM - 5PM</td>
+            <td>montegobaybranch@preservation.com</td>
+            <td>876123453672</td>
+        </tr>
+    </table>
+    <h2>General Inquiries</h2>
+    <form action="confirmation.html">
+        <label for="fullname">Name: *</label> <br/> 
+        <input required type="text" id="fullname" name="">
+        <br/><br/>
+
+        <label for="email">E-mail: *</label> <br/>
+        <input required type="email" id="email" name="email">
+        <br/><br/>
+
+        <label>Are you employed?</label> <br/>
+        <input type="radio" value="Y" name="employed?">Yes
+        <input type="radio" value="N" name="employed">No
+        <br/><br/>
+
+        <label for="inquiry">State your enquiry:*</label>
+        <br/>
+        <textarea cols="50" rows="10" maxlength="150" id="'inquiry" name="inquiry"></textarea>
+        <br/><br/>
+
+
+        <input type="submit"\>
+    </form>
+</body>
+</html>

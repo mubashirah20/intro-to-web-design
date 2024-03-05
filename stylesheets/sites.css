@@ -1,0 +1,14 @@
+h1 {
+    color: palevioletred;
+}
+h2 {
+    color:lightcoral;
+    text-decoration:underline;
+}
+h1,h2 {
+    font-family:'Times New Roman', Times, serif
+}
+
+p,li {
+    font-family: 'Courier New', Courier, monospace;
+}

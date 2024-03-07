@@ -12,3 +12,22 @@ h1,h2 {
 p,li {
     font-family: 'Courier New', Courier, monospace;
 }
+
+/* look for any id that says.. */
+#banner{
+    background-color: lightpink;
+}
+
+#nav{
+    background-color: beige;
+    color: moccasin;
+    padding: 10px;
+    text-align: center ;
+}
+
+#nav a{
+    color:palevioletred;
+    text-decoration: none;
+    font-size: large;
+    margin-right: 8px;
+}

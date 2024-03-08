@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="stylesheets/sites.css"/>
-    
+
 </head>
 <body>
+    <!-- Navigation bar -->
     <a href="index.html">Home</a>
     <a href="about_us.html">About us</a>
     <a href="contact_us.html">Contact us</a>
@@ -15,14 +16,19 @@
     <h1 style="color: lightcoral;">Contact Us</h1>
     <hr/>
     <h2>Locations</h2>
+
+    <!-- Insert table -->
     <table>
+        <!-- tr = table rows -->
         <tr>
+            <!-- first row headers -->
             <th>Locations</th>
             <th>Opening hours</th>
             <th>E-mail address</th>
             <th>Phone number</th>
         </tr>
         <tr>
+            <!-- data under corresponding columns -->
             <td>Mandeville</td>
             <td>9AM - 5PM</td>
             <td>mandevillebranch@preservation.com</td>
@@ -41,9 +47,11 @@
             <td>876123453672</td>
         </tr>
     </table>
+
     <h2>General Inquiries</h2>
+    <!-- Insert form -->
     <form action="confirmation.html">
-        <label for="fullname">Name: *</label> <br/> 
+        <label for="fullname">Name: *</label> <br/>
         <input required type="text" id="fullname" name="">
         <br/><br/>
 
@@ -58,11 +66,12 @@
 
         <label for="inquiry">State your enquiry:*</label>
         <br/>
+        <!-- Inserts block area to enter text -->
         <textarea cols="50" rows="10" maxlength="150" id="'inquiry" name="inquiry"></textarea>
         <br/><br/>
 
-
-        <input type="submit"\>
+        <!-- Inserts type of GUI -->
+        <input type="submit">
     </form>
 </body>
 </html>

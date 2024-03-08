@@ -16,12 +16,14 @@ p,li {
 /* look for any id that says.. */
 #banner{
     background-color: lightpink;
+    /* padding enlarges spacing around the text */
     padding-bottom: 5px;
     padding-top: 5px;
     text-align: center;
 }
-/* banner, find any p tags that you havee and make margin 0 */
+/* banner, find any p tags that you have and make margin 0 */
 #banner p{
+    /* gives or removes margin spacing */
     margin: 0;
 }
 #nav{
@@ -31,12 +33,14 @@ p,li {
     text-align: center ;
 }
 
+/* go to nav bar, hover above the links, change deco */
 #nav a:hover{
     color: lightsalmon;
     background-color:antiquewhite;
     padding: 10px;
 }
 
+/* styling the nav bar */
 #nav a{
     color:palevioletred;
     text-decoration: none;

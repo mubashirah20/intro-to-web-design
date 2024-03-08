@@ -8,19 +8,70 @@
 
 </head>
 <body>
-    <!-- Navigation bar -->
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About us</a>
-    <a href="contact_us.html">Contact us</a>
+    <!-- header tag for semantic layout -->
+    <header>
+        <div id="banner">
+            <p>Notification</p>
+        </div>
 
-    <!-- Header 1 -->
+        <!-- Semantic tags for nav links -->
+        <nav>
+            <!-- Navigation bar -->
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About us</a>
+            <a href="contact_us.html">Contact us</a>
+        </nav>
+    </header>
+
+    <main>
+     <!-- Header 1 -->
     <h1 style="color: lightcoral;">About Us</h1>
     <hr/>
     <!-- Under heading line -->
 
-    <h2>Plants Preservation Agency</h2>
-    <!-- Insert image -->
-    <img src="images/flower.jpg" alt="Flower"/>
-    <p>We strive for beauty, love and intelligence</p>
+    <!-- each article= heading + content  -->
+    <article>
+        <h2>Plants Preservation Agency</h2>
+        <!-- Insert image -->
+        <img src="images/flower.jpg" alt="Flower"/>
+        <p>We strive for beauty, love and intelligence</p>
+    </article>
+    
+    <article>
+        <h2>Daily tasks</h2>
+        <!-- unordered list -->
+        <ul>
+            <li>We petrol preservations</li>
+            <li>We police</li>
+            <li>We protect</li>
+            <li>We rescue</li>
+        </ul>
+    </article>
+
+    <article>
+        <h2>How you can join:</h2>
+        <!-- ordered list -->
+        <ol>
+            <li>Call our recruitment centre</li>
+            <li>Send resume</li>
+            <li>Attend interview</li>
+            <li>Complete training</li>
+            <li>
+                <!-- hyperlinks text to a website -->
+                <a href="contact_us.html">Contact Centre Office</a>
+            </li>
+        </ol>
+    </article>
+    
+    </main>
+
+    <footer>
+        <!-- same footer as index page -->
+        <br/><br/>
+            <a href="https://www.amazon.com">Amazon</a>
+            <a href="https://www.ebay.com" target="_blank">e-Bay </a>
+            <a href="https://www.trevoirwilliams.com" target="_blank">
+                Trevoir Williams Website </a>
+    </footer>
 </body>
 </html>

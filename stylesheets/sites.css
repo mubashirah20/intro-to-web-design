@@ -26,7 +26,7 @@ p,li {
     /* gives or removes margin spacing */
     margin: 0;
 }
-#nav{
+#nav, nav{
     background-color: beige;
     color: moccasin;
     padding: 10px;
@@ -34,14 +34,14 @@ p,li {
 }
 
 /* go to nav bar, hover above the links, change deco */
-#nav a:hover{
+#nav a:hover, nav a:hover{
     color: lightsalmon;
     background-color:antiquewhite;
     padding: 10px;
 }
 
 /* styling the nav bar */
-#nav a{
+#nav a, nav a{
     color:palevioletred;
     text-decoration: none;
     font-size: large;

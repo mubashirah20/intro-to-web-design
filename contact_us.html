@@ -73,9 +73,9 @@
         <article>
             <h2>General Inquiries</h2>
             <!-- Insert form -->
-            <form action="confirmation.html">
+            <form action="confirmation.html" id="contactForm">
                 <label for="fullname">Name: *</label> <br/>
-                <input required type="text" id="fullname" name="">
+                <input required type="text" id="fullname" name="" value="abc">
                 <br/><br/>
         
                 <label for="email">E-mail: *</label> <br/>
@@ -95,6 +95,10 @@
         
                 <!-- Inserts type of GUI -->
                 <input type="submit">
+                <!-- creates a button with type button that doesn't submit -->
+                <button type="button" onclick="ClearForm()">Clear</button>
+                <!-- 'on' keyword can be used for an event, when user moves/clicks etc, do this. 
+                    Event +action carried out-->
             </form>
         </article>  
     </main>
@@ -107,6 +111,6 @@
             <a href="https://www.trevoirwilliams.com" target="_blank">
                 Trevoir Williams Website </a>
     </footer>
-    
+    <script src="scripts/sites.js"></script>
 </body>
 </html>

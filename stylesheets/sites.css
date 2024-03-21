@@ -60,7 +60,7 @@ p,li {
 
 }
 /* centre aligns main content of the webpage based on the screen it is on */
-#main, main, main{
+#main, main, main, main{
     width: 80% ;
     margin: 0 auto ;
 }

@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
     <link rel="stylesheet" href="stylesheets/sites.css"/>
-    
 </head>
 <body>
-    <header>
-        <div id="banner">
-            <p>Notification</p>
-        </div>
-
-        <!-- Semantic tags for nav links -->
-        <nav>
-            <!-- Navigation bar -->
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About us</a>
-            <a href="contact_us.html">Contact us</a>
-        </nav>
-    </header>
-    <main>
+    <div id="header">
+        <!-- divs can also be in another div, 
+            id labels which div it is -->
+        <div id="banner" class="text-white text-center">
+            <p>Random website notification</p>
+    </div>
+        <!-- <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark"> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="index.html">Plants Protection</a>
+                  <a class="nav-link" href="about_us.html">About Us</a>
+                  <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </div>
+            </div>
+          </nav>
+        
+    </div>
+    <main class="container">
         <article>
             <h1 style="color: lightcoral;">Enquiry submitted</h1>
             <hr/>
@@ -38,6 +43,8 @@
             <a href="https://www.trevoirwilliams.com" target="_blank">
                 Trevoir Williams Website </a>
     </footer>
-    
+    <script src="scripts/jquery.min.js"></script> 
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/sites.js"></script>
 </body>
 </html>

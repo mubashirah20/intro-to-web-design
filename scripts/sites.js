@@ -23,3 +23,23 @@ $('#jQueryBtn').click(function()
         {
             $('p').hide() ;
         })
+
+//to show the active page, page u on while hovering
+$(
+    function()
+    {
+        var pages=['index','about','contact'];
+        //look at whatever page u on, look at location and get pathname
+        var pathname= window.location.pathname;
+
+        //get all the links that have the class nav-link; for each exec. this function
+        $('.nav-link').each(function(item)
+        {
+            if(pathname.includes(pages[item]))
+            {
+                $(this).addClass('active');
+                $(this).attr('aria-current','page');
+            }
+        })
+    }
+);

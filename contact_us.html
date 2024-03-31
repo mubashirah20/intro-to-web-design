@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
     <link rel="stylesheet" href="stylesheets/sites.css"/>
 
 </head>
 <body>
     <header>
-        <div id="banner">
-            <p>Notification</p>
-        </div>
+        <div id="banner" class="text-white text-center">
+            <p>Random website notification</p>
 
         <!-- Semantic tags for nav links -->
-        <nav>
-            <!-- Navigation bar -->
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About us</a>
-            <a href="contact_us.html">Contact us</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="index.html">Plants Protection</a>
+                  <a class="nav-link" href="about_us.html">About Us</a>
+                  <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </div>
+            </div>
+          </nav>
     </header>
 
-    <main>
-        <h1 style="color: lightcoral;">Contact Us</h1>
+    <main class="container">
+        <h1 style="color: rgb(252, 98, 98);">CONTACT US</h1>
         <hr/>
         <article>
-            <h2>Locations</h2>
+        <h2>Locations</h2>
     
             <!-- Insert table -->
-            <table>
+        <table class="table table-striped table-hover">
                 <!-- tr = table rows -->
-                <tr>
+            <tr>
                     <!-- first row headers -->
                     <th>Logo</th>
                     <th>Locations</th>
@@ -74,29 +77,34 @@
             <h2>General Inquiries</h2>
             <!-- Insert form -->
             <form action="confirmation.html" id="contactForm">
-                <label for="fullname">Name: *</label> <br/>
-                <input required type="text" id="fullname" name="" value="abc">
-                <br/><br/>
-        
-                <label for="email">E-mail: *</label> <br/>
-                <input required type="email" id="email" name="email">
-                <br/><br/>
-        
-                <label>Are you employed?</label> <br/>
-                <input type="radio" value="Y" name="employed?">Yes
-                <input type="radio" value="N" name="employed">No
-                <br/><br/>
-        
-                <label for="inquiry">State your enquiry:*</label>
-                <br/>
-                <!-- Inserts block area to enter text -->
-                <textarea cols="50" rows="10" maxlength="150" id="'inquiry" name="inquiry"></textarea>
-                <br/><br/>
-        
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">Name: *</label> <br/>
+                    <input required type="text" class="form-control" id="fullname" name="" placeholder="e.g.John Doe">
+                    <br/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inquiry" class="form-label">State your enquiry:*</label>
+                    <textarea cols="50" rows="10" maxlength="150" id="'inquiry" name="inquiry"class="form-control" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label" id="email">E-mail: *</label> <br/>
+                    <input required type="email" id="email" class="form-control" name="email-address" placeholder="john@email.com">
+                    <br/>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Are you employed?</label> <br/>
+                    <input id="yesEmployed" type="radio" value="Y" name="employed" 
+                    class="form-check-input"/> 
+                    <label class="form-check-label" for="yesEmployed">Yes</label>
+                    <input id="noEmployed" type="radio" value="N" name="employed" 
+                    class="form-check-input"/> 
+                    <label class="form-check-label" for="noEmployed">No</label>
+                  </div>
+    
                 <!-- Inserts type of GUI -->
-                <input type="submit">
+                <input type="submit" class="btn btn-success">
                 <!-- creates a button with type button that doesn't submit -->
-                <button type="button" onclick="ClearForm()">Clear</button>
+                <button type="button" onclick="ClearForm()" class="btn btn-warning">Clear</button>
                 <!-- 'on' keyword can be used for an event, when user moves/clicks etc, do this. 
                     Event +action carried out-->
             </form>
@@ -111,6 +119,8 @@
             <a href="https://www.trevoirwilliams.com" target="_blank">
                 Trevoir Williams Website </a>
     </footer>
+    <script src="scripts/jquery.min.js"></script> 
+    <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/sites.js"></script>
 </body>
 </html>

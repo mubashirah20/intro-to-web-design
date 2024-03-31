@@ -15,7 +15,7 @@ p,li {
 
 /* look for any id that says.. */
 #banner{
-    background-color: lightpink;
+    background-color: rgb(255, 128, 145);
     /* padding enlarges spacing around the text */
     padding-bottom: 5px;
     padding-top: 5px;
@@ -26,12 +26,12 @@ p,li {
     /* gives or removes margin spacing */
     margin: 0;
 }
-#nav, nav, nav{
+/* #nav, nav, nav{
     background-color: beige;
     color: moccasin;
     padding: 10px;
     text-align: center ;
-}
+} */
 
 /* go to nav bar, hover above the links, change deco */
 #nav a:hover, nav a:hover, nav a:hover{
@@ -48,7 +48,7 @@ p,li {
     margin-right: 8px;
 }
 
-#footer, footer, footer{
+/* #footer, footer, footer{
     background-color: rgb(224, 203, 171);
     min-height: 150px ;
     text-align: center;
@@ -57,13 +57,12 @@ p,li {
 #footer a, footer a, footer a{
     color: rgb(233, 57, 86);
     text-decoration: overline;
-
-}
+} */
 /* centre aligns main content of the webpage based on the screen it is on */
-#main, main, main, main{
+/* #main, main, main, main{
     width: 80% ;
     margin: 0 auto ;
-}
+} */
 
 /* space between articles */
 #article{

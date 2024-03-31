@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Home Page</title>
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
         <!-- links css stylesheet to the html -->
         <link rel="stylesheet" href="stylesheets/sites.css"/>
     </head>
@@ -9,93 +10,125 @@
         <!-- div- divides the page into into sections, 
             can also have a div for diff pages -->
         <div id="header">
-            <!-- divs can also be in another div, 
-                id labels which div it is -->
-            <div id="banner">
-                <p>Random website notification</p>
+                <!-- divs can also be in another div, 
+                    id labels which div it is -->
+                <div id="banner" class="text-white text-center">
+                    <p>Random website notification</p>
             </div>
-
-            <div id="nav"> 
-                <!-- Anchor tags used for internal navigation-->
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About us</a>
-                <a href="contact_us.html">Contact us</a>
-            </div>
+                <!-- <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark"> -->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link" aria-current="page" href="index.html">Plants Protection</a>
+                          <a class="nav-link" href="about_us.html">About Us</a>
+                          <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </div>
+                      </div>
+                  </nav>
+                
         </div>
-        <div id="main">
-            <h1 style="color: rgb(252, 98, 98);" class="diffAppearance">Plants Preservation Centre - South Africa</h1>
+        <div id="main" class="container">
+            <h1 style="color: rgb(252, 98, 98);">PLANTS PRESERVATION CENTRE - SOUTH AFRICA</h1>
         <hr/>
 
-        <h2>Preservation Success Story</h2>
-        <!-- how to embed a YT video -->
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/M9j3n4oZk3o?si=OHPwQsabKy0ybKzy" 
-        title="Geranium Plant-Success Story" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- New carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/roses.jpg" class="d-block w-100" alt="Rose">
+              </div>
+              <div class="carousel-item">
+                <img src="images/nature.jpg" class="d-block w-100" alt="Nature">
+              </div>
+              <div class="carousel-item">
+                <img src="images/water-lilies.jpg" class="d-block w-100" alt="Water Lilies">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <br/>
+          <br/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facilis 
+            incidunt impedit error! Ipsum vel nisi recusandae a deserunt itaque 
+            commodi vero unde ea amet ipsam eius nesciunt, tenetur accusantium?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam minus 
+            fuga natus assumenda pariatur. Obcaecati adipisci facilis iusto eos 
+            praesentium architecto porro, quaerat beatae eum esse officiis voluptatum 
+            unde maxime.</p>
+          <br/>
+          <br/>
+          <div class="row">
+            <div class="col">
+              <h2>Preservation Success Story</h2>
+              <!-- how to embed a YT video -->
+              <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/M9j3n4oZk3o?si=OHPwQsabKy0ybKzy" 
+              title="Geranium Plant-Success Story" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+              gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> 
+            <div class="col">
+                <!-- Embedding video and audio  -->
+              <h2>Cayman Broc- Iguana</h2>
+              <video width="560" height="315" controls>
+              <source src = video/brac_iguana.MP4 type="video/MP4"/>
+              <source src = video/brac_iguana.ogg type="video/ogg"/>
+              <source src = video/brac_iguana.wmv type="video/wmv"/>
+              Your browser does not support the video
+              </video>
+              <br/>
+              <audio controls>
+                  <source src="music/song.mp3" type="audio/mpeg" />
+                  Your browser does not support the audio
+              </audio>
+              <br/>
+            </div>
+          </div>
 
-        <h2>Daily tasks</h2>
-        <!-- unordered list -->
-        <ul>
-            <li>We petrol preservations</li>
-            <li>We police</li>
-            <li>We protect</li>
-            <li>We rescue</li>
-        </ul>
-
-        <h2>How you can join:</h2>
-        <!-- ordered list -->
-        <ol>
-            <li>Call our recruitment centre</li>
-            <li>Send resume</li>
-            <li>Attend interview</li>
-            <li>Complete training</li>
-            <li>
-                <!-- hyperlinks text to a website -->
-                <a href="contact_us.html">Contact Centre Office</a>
-            </li>
-        </ol>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-
-        <p>Hello World</p>
-        <p>Hi! I am Mubashirah and I will be travelling and achieving ALL my dreams soon!:) </p>
-
-        </br>Cool stuff!</br>
-        <!-- Embedding video and audio  -->
-        <h2>Cayman Broc- Iguana</h2>
-        <video width="560" height="315" controls>
-            <source src = video/brac_iguana.MP4 type="video/MP4"/>
-            <source src = video/brac_iguana.ogg type="video/ogg"/>
-            <source src = video/brac_iguana.wmv type="video/wmv"/>
-        Your browser does not support the video
-        </video>
-        <br/>
-        <audio controls>
-            <source src="music/song.mp3" type="audio/mpeg" />
-            Your browser does not support the audio
-        </audio>
-        <br/>
-        <br/>
-        <br/>
-        <!-- when clicking these buttons, it will hide all the paragraphs -->
-        <!-- first, call the function -->
-        <button id="jQueryBtn">Hide P Tags - JQuery</button>
-        <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
-
-        </div>
-
-        <div id="footer">
-            <a href="https://www.amazon.com"> Amazon </a>
-            <a href="https://www.ebay.com" target="_blank">e-Bay </a>
-            <a href="https://www.trevoirwilliams.com" target="_blank">
+          <div class="text-center">
+            <!-- when clicking these buttons, it will hide all the paragraphs -->
+            <!-- first, call the function -->
+            <button id="jQueryBtn">Hide P Tags - JQuery</button>
+            <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
+          </div> 
+          
+          <!-- padding y and margin top -->
+          <footer class="py-3 mt-4" data-bs-theme="light">
+            <!-- left and right should be symmetrical -->
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about_us.html" class="nav-link px-2 text-body-secondary">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact_us.html" class="nav-link px-2 text-body-secondary">Contact Us</a>
+              </li>
+            </ul>
+            <p class="text-center text-body-secondary">&copy;
+              <a href="https://www.trevoirwilliams.com" target="_blank">
                 Trevoir Williams Website </a>
-        </div>
-        <script src="scripts/jquery.min.js"></script>
+            </p>
+          </footer>
+
+      </div>
+        <!-- JQuery then Bootstrap then own code -->
+        <script src="scripts/jquery.min.js"></script> 
+        <script src="scripts/bootstrap.min.js"></script>
         <script src="scripts/sites.js"></script>
-        <script>
-            
-        </script>
+    
     </body>
 </html>
